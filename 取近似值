@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{
+    float x;
+    int y;
+    int z;
+    //printf("请输入一个正浮点数值");
+    scanf("%f",&x);
+    y=x/0.1;
+    while(y>10)
+    {
+        y=y%10;
+    }
+    if(y>=5)
+    {    
+        z=x+1-y/10;
+        printf("%d",z);
+    }
+    else
+    {    
+        z=x-y/10;
+        printf("%d",z);
+    }
+    return 0;
+}
